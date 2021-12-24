@@ -490,22 +490,31 @@
   border: 5px solid $color-b;
 
   span {
-    font-size: 4rem;
+    font-size: 2rem;
     color: $color-a;
+
+    @include breakpoint(md) {
+      font-size: 4rem;
+    }
+
+    @include breakpoint(lg) {
+      font-size: 3rem;
+    }
   }
 }
 
 .title-c {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
-  margin-left: -40px;
+  margin-left: 10px;
 
   @include breakpoint(md) {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   @include breakpoint(lg) {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    margin-left: -40px;
   }
 }
 

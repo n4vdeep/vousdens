@@ -320,13 +320,21 @@ a {
 
 /*------/ Title /------*/
 .title-wrap {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+
+  @include breakpoint(lg) {
+    padding-bottom: 4rem;
+  }
 }
 
 .title-a {
   text-decoration: none;
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-weight: 600;
+
+  @include breakpoint(lg) {
+    font-size: 2.6rem;
+  }
 }
 
 .title-link {
