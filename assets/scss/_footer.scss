@@ -10,13 +10,9 @@
   .vousden-partners {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     height: auto;
-
-    @include breakpoint(md) {
-      flex-direction: row;
-    }
     
     .vousden-partners-img img {
       max-width: 100%;
