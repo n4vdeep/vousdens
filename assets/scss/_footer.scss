@@ -8,18 +8,27 @@
   background: #fff;
 
   .vousden-partners {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
     
-    .vousden-partners-img img {
-      max-width: 100%;
-      display: block;
-      height: 75px;
-      padding-right: 1rem;
-      margin-bottom:50px;
+    img {
+        height: 50px;
+        margin-bottom: 50px;
+
+        @include breakpoint(sm) {
+          height: 70px;
+        }
+    }
+    
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @include breakpoint(xl) {
+      grid-template-columns: repeat(6, 1fr);
     }
   }
 }

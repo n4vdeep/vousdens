@@ -14,9 +14,9 @@
     font-weight: 700;
     text-align: right;
 
-    @include breakpoint(md) {
-      left: -60px;
-    }
+      @include breakpoint(md) {
+        left: -60px;
+      }
   }
 }
 
