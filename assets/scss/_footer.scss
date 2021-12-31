@@ -15,12 +15,17 @@
     align-items: center;
     
     img {
-        height: 50px;
-        margin-bottom: 50px;
+      height: 25px;
+      margin-bottom: 50px;
+      transition: all .2s ease-in-out;
 
-        @include breakpoint(sm) {
-          height: 70px;
-        }
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @include breakpoint(sm) {
+        height: 70px;
+      }
     }
     
     @include breakpoint(sm) {
